@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Presentación proyecto final Argentina Programa 4.0 Matías Nicolás Gallardo</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1><i class="fa solid fa-user"></i> Matías Nicolás Gallardo</h1>
+        <ul class="navegacion"> 
+            <li><a href="#" class="nav-link""><i class="fas fa-home" title="Inicio"></i> Inicio</a></li>
+            <li><a href="#datos_personales" class="nav-link"><i class="far fa-id-badge" title="Datos personales"></i> Sobre mi</a></li>
+            <li><a href="#conocimientos" class="nav-link"><i class="fa-solid fa-brain" title="Conocimientos"></i> Conocimientos</a></li>
+            <li><a href="#formacion_academica" class="nav-link"><i class="fa-solid fa-building-columns" title="Formación Académica"></i> Formación Académica</a></li>
+            <li><a href="#cursos_capacitaciones" class="nav-link"><i class="fa-solid fa-book" title="Cursos y capacitaciones"></i> Cursos y capacitaciones</a></li>
+            <li><a href="#experiencia_laboral" class="nav-link"><i class="fa-solid fa-briefcase" title="Experiencia Laboral"></i> Experiencia Laboral</a></li>
+            <li><a href="#objetivo" class="nav-link"><i class="fa-solid fa-bullseye" title="objetivo"></i> Objetivo</a></li>
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    <!-- Bienvenido -->
+    <section class="bienvenido" id="bienvenido">
+        <!--Boton popup-->
+        <div class="boton-modal">
+            <label for="btn-modal">
+                ¡Haz click aquí!
+            </label>
+        </div>
+        <!--Fin de Boton-->
+        <!--Popup-->
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2>¡Bienvenido!</h2>
+                <p>Primero que nada... ¡Buenos días, buenas tardes o buenas noches!<br> Espero que este proyecto sea de su agrado y que disfrute el desarrollo del mismo.</p>
+                <div class="btn-cerrar">
+                    <label for="btn-modal"><i class="fa-solid fa-xmark"id="btn_close"></i></label>
+                </div>
+            </div>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </div>        
+    </section>
+    <!-- Sobre mí -->
+    <section class="datospersonales" id="datos_personales">
+      <img class="circular--square" src="images/Messi.jpg">
+      <div id="datos_personales" class="datos_personales">
+              <h2>Sobre mí</h2>
+              <p>Primero que nada, mi nombre es Matías Nicolás Gallardo... ¿Qué puedo decir sobre mí? Nací el 28 de marzo de 1998, en Buenos Aires, Argentina. Estoy estudiando el Profesorado de Educación Física en la Universidad Nacional de la Matanza, mientras que a su vez, estoy interesado en aprender sobre programación y sus distintos tipos.<br> En mis ratos libres me gusta estar con videojuegos y ver videos sobre tecnología.</p>
+      </div>
+    </section>
+    <!-- Conocimientos -->
+    <section class="conocimientos" id="conocimientos">
+      <div id="conocimientos" class="conocimientos">
+          <h2>Conocimientos</h2>
+              <div class="icon_android"><i class="fa-brands fa-android"></i> Android</div>
+              <div class="container">
+              <div class="skills android">23%</div>
+              </div>
+
+              <div class="icon_html"><i class="fa-brands fa-html5"></i> HTML</div>
+              <div class="container">
+              <div class="skills html">67%</div>
+              </div>
+
+              <div class="icon_css"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+              <div class="container">
+              <div class="skills css">45%</div>
+              </div>
+
+              <div class="icon_js"><i class="fa-brands fa-square-js"></i> JavaScript</div>
+              <div class="container">
+              <div class="skills js">35%</div>
+              </div>
+
+              <div class="icon_windows"><i class="fa-brands fa-windows"></i> Windows</div>
+              <div class="container">
+              <div class="skills windows">78%</div>
+              </div>
+          </div>
+    </section> 
+    <!-- Formación académica -->
+    <section class="formacion_academica" id="formacion_academica">
+      <div id="formacion_academica" class="formacion_academica">
+          <h2>Formación académica</h2>
+              <h3>Profesorado en Educación Física</h3>
+                      <p>Universidad Nacional de la Matanza 2016-Actualidad.</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1674872911513!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <h3>Bachiller con capacitación laboral en administración contable informatizada</h3>
+                      <p>Secundaria Instituto Placido Marin 2011-2015.</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.126697574175!2d-58.4995913!3d-34.653903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e7feee00b610f9a!2zUGzDoWNpZG8gTWFyw61u!5e0!3m2!1ses-419!2sar!4v1674872962038!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <!-- Cursos y capacitaciones -->
+    <section class="cursos_capacitaciones" id="cursos_capacitaciones">
+      <div id="cursos_capacitaciones" class="cursos_capacitaciones">
+          <h2>Cursos y capacitaciones</h2>
+              <ul>
+                  <li>Diplomatura de Entrenador Deportivo con orientación Tecnológica.
+                      <p><em>Universidad Tecnológica de Buenos Aires</em></p>
+                  </li>
+                  <li>Programador web
+                      <p><em>Universidad Tecnológica de Buenos Aires</em></p>
+                  </li>
+                  <li>Diseño web adaptativo
+                      <p><em>Freecodecamp</em></p>
+                  </li>
+                  <li>Primeros pasos del desarrollo en frontend
+                      <p><em>TICMAS Academy, Argentina Programa 4.0</em></p>
+                  </li>
+              </ul>
+      </div>
+    </section>
+    <!-- Experiencia laboral -->
+    <section class="experiencia_laboral" id="experiencia_laboral">
+      <h2>Experiencia Laboral</h2>
+      <ul>
+          <li>Asistente de gasista matriculado
+              <p>2015-actualidad</p>
+          </li>
+          <li>Manejo de redes sociales para pequeños emprendimientos
+              <p>Actualidad</p>
+          </li>
+          <li>Docente en colonia de verano en Polideportivo Parque Avellaneda
+              <p>Enero 2020, 2021, 2022 y 2023</p>
+          </li>
+      </ul>
+    </section>
+    <!-- Objetivo -->
+    <section class="objetivo" id="objetivo">
+      <div id="objetivo" class="objetivo">
+          <h2>Objetivo:</h2>
+          <p>Encontrar un espacio en el cual pueda demostrar mi potencial, formarme continuamente y que, por sobre todas las cosas, permita mi crecimiento profesional y personal.</p>
+      </div>
+    </section>
+    <!-- Footer redes sociales -->
+    <footer><section class="redes_sociales" id="redes_sociales">
+      <div id="redes_sociales" class="redes_sociales">
+          <a href="https://www.facebook.com/" target="_blank"><img src="icons/facebook.png"></a>              
+          <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram.png"></a>
+          <a href="https://www.twitter.com/" target="_blank"><img src="icons/twitter.png"></a>
+          <a href="mailto:matiasgallardo1998@gmail.com" target="_blank"><img src="icons/gmail.png"></a>
+          <a href="https://www.linkedin.com" target="_blank" ><img src="icons/linkedin.png"></a>
+      </div>
+    </section></footer>
+    <!--desplazarse hacia arriba-->
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="icons/arriba.png" class="socicon up-arrow" alt="desplazarse-hacia-arriba"/></i>
+    <!-- Website scripts -->
+    <script src="main.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

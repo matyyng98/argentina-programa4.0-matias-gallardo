@@ -1,0 +1,1096 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables fin */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body, footer {
+  font-family: var(--font-family);
+  color: white;
+  width: auto;
+}
+/*navbar inicio*/
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: #4756df;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: white;
+}
+  
+nav a {
+    color: whitesmoke;
+    transition: var(--transicion);
+}
+
+nav a:hover {
+    color: var(--valor-secundario);
+    border-bottom: 2px solid var(--valor-secundario);
+}
+  
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+    list-style: none;
+}
+  
+nav ul li {
+    font-weight: var(--negrita);
+}
+
+.menu-hamburguesa {
+    color: white;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/*navbar final*/
+
+/*personalización del cuerpo*/
+.bienvenido, .datospersonales, .conocimientos, .formacion_academica, .cursos_capacitaciones, .experiencia_laboral, .objetivo{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2rem;
+    min-height: 100vh;
+    font-size: 1rem;
+    background-color: var(--primary);
+    will-change: background-color;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    color: var(--light);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+
+/*bienvenido inicio*/
+.bienvenido{
+    background-color: rgb(5, 5, 48);
+}
+
+/*POPUP*/
+/*:::Boton-Modal:::*/
+.boton-modal{
+    padding: 40px;
+}
+
+.boton-modal label{
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #185E83;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 50px;
+}
+
+.boton-modal label:hover{
+    background-color: #185E83;
+    color: white;
+}
+  /*:::Fin Boton-Modal:::*/
+  
+  /*:::Ventana Modal:::*/
+  #btn-modal{
+    display: none;
+  }
+  .container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgb(5, 5, 48);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+  .content-modal{
+    width: auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color:#185E83;
+    border-radius: 15px;
+    color: white;
+}
+
+.content-modal h2{
+    margin-bottom: 15px;
+    font-size: 45px;
+    width: auto;
+}
+
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 35px;
+    width: auto;
+}
+
+.content-modal .btn-cerrar{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+
+.content-modal .btn-cerrar label:hover{
+    background-color:#b60101;
+}
+
+.cerrar-modal{
+    width:auto;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+/*bienvenido final*/
+
+/*sobre mi inicio*/
+.datospersonales{
+  background-color: rgb(6, 17, 78);
+  width: auto;
+}
+
+.datospersonales img{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    height: 20rem;
+    width: 20rem;
+  }      
+
+.datos_personales{
+    width: auto;
+    height: auto; 
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.datos_personales h2{ 
+    margin-bottom: var(--bottom-margin);
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.datos_personales p{
+    line-height: var(--line-height);
+    padding: 1rem 1rem;  
+    font-size: 30px;
+    text-align: justify;
+    height: auto;
+    width: auto;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.photo-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .circular--square {
+  border-radius: 50%;
+  }
+/*sobre mi final*/
+
+/*conocimientos inicio*/
+.conocimientos{
+  background-color: rgb(10, 51, 99);
+  width: auto;
+  text-align: center;
+}
+
+.conocimientos h2 {
+  font-size: 100px;
+  margin-bottom: 25px;
+  margin-top: auto;
+}
+
+/*barra skills*/
+* {box-sizing:border-box}
+
+/* contenedor de barra de skills */
+.container {
+  width: 100%; /* Full width */
+  background-color: rgba(221, 221, 221, 0); /* Grey background */
+  text-align: center;
+  margin: auto;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.icon_android{
+  font-size: 50px;
+}
+.icon_html{ 
+  font-size: 50px;
+}
+.icon_css{
+  font-size: 50px;
+}
+.icon_js {
+  font-size: 50px;
+}
+.icon_windows{
+  font-size: 50px;
+}
+
+.android {width: 23%; background-color: #808080;}
+.html {width: 67%; background-color: #04AA6D;}
+.css {width: 45%; background-color: #2196F3;}
+.js {width: 35%; background-color: #f44336;}
+.windows {width: 78%; background-color: #f7f311; color: black}
+/*fin barra skills*/
+/*conocimientos fin*/
+
+/*formación académica inicio*/
+.formacion_academica{ 
+  background-color: #014f8f;
+  width:auto;
+}
+
+.formacion_academica h2{
+  font-size: 90px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.formacion_academica h3 {
+  text-align: center;
+  height: 100%;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.formacion_academica p{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5;
+}
+
+.formacion_academica iframe{
+  text-align: center;
+  margin-bottom: auto;
+}
+/*formación académica final*/
+
+/*cursos y capacitaciones inicio*/
+.cursos_capacitaciones{
+  background-color: #256eaa;
+  width: auto;
+}
+
+.cursos_capacitaciones h2{
+  font-size: 80px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.cursos_capacitaciones ul{
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 5px;
+  line-height: 2;
+  list-style: circle;
+}
+
+.cursos_capacitaciones p{
+  font-size: 20px;
+  font-style: italic;
+}
+/*cursos y capacitaciones fin*/
+
+/*experiencia laboral inicio*/
+.experiencia_laboral {
+  background-color:#1865a5;
+  width: auto;
+}
+
+.experiencia_laboral h2{
+  font-size: 80px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.experiencia_laboral ul{
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 5px;
+  line-height: 2;
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.experiencia_laboral p{
+  font-size: 20px;
+  font-style: italic;
+  
+}
+/*experiencia laboral fin*/
+
+/*objetivo inicio*/
+.objetivo{
+  background-color: #0466b6;
+}
+
+.objetivo h2{
+  margin-bottom: var(--bottom-margin);
+  font-size: 60px;
+  height: auto;
+}
+
+.objetivo p{
+  text-align: center;
+  font-size: 35px;
+  border-radius: 20px 20px 20px 20px;
+  border: 10px double;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  max-width: 60%;
+  line-height: 2;
+}
+/*objetivo fin*/
+
+/*redes sociales inicio*/
+.redes_sociales{
+  width: auto;
+  font-size: 20px;
+  color: #fff;
+  background-color: #8b8eaf;
+  text-align: center;
+}
+
+.redes_sociales img{
+  width: 2rem;
+  height: 2rem;
+}
+/*redes sociales fin*/
+
+/*desplazarse hacia arriba inicio*/
+.desplazarse-hacia-arriba {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.desplazarse-hacia-arriba img {
+  width: 50px;
+  height: 50px;
+}
+/*desplazarse hacia arriba fin*/
+
+/*media queries*/
+
+@media screen and (max-width: 950px) {
+  body, footer{
+      width: auto;
+    }
+
+/*navbar inicio*/
+  nav {
+      padding: 1.5rem 1rem;
+      width: auto;
+    }
+  
+  nav ul {
+      position: fixed;
+      background-color: darkblue;
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+      font-size: 30px;
+    }
+  
+  nav ul li {
+      margin: 8px;
+    }
+  
+  .menu-hamburguesa {
+      display:flex;
+    }
+  
+  nav ul.show {
+      transform: translateX(0);
+    }
+/*navbar fin*/
+
+/*bienvenido inicio*/
+    .bienvenido{
+      height: auto;
+    }
+    
+    .content-modal{
+      width: 90%;
+    }
+
+    .content-modal h2{
+      font-size: 30px;
+    }
+
+    .content-modal p{
+      font-size: 20px;
+    }
+
+    .boton-modal label{
+      font-size: 60PX;
+    }
+/*bienvenido fin*/
+
+/*sobre mi inicio*/
+  .datos_personales{
+    width: 80%;
+  }
+  .datos_personales h2{ 
+    margin-bottom: var(--bottom-margin);
+    font-size: 60px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .datos_personales p{
+    line-height:normal;
+    padding: 0.3rem 0;  
+    font-size: 40px;
+    margin: auto;
+  }
+/*sobre mi final*/
+
+/*conocimientos inicio*/
+  .conocimientos h2{
+    font-size: 60px;
+  }
+
+  .icon_android, .icon_html, .icon_css, .icon_js, .icon_windows{
+    font-size: 50px;
+  }
+/*conocimientos fin*/
+
+/*formación académica inicio*/
+  .formacion_academica h2{
+    font-size: 60px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .formacion_academica h3{
+    font-size: 45px;
+    margin-top: auto;
+    margin-bottom:10px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .formacion_academica p{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-right: 10px;
+    font-style: italic;
+  }
+
+  .formacion_academica iframe{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+/*formación académica fin*/
+
+/*cursos y capacitaciones inicio*/
+  .cursos_capacitaciones h2{
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .cursos_capacitaciones ul{
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .cursos_capacitaciones p{
+    font-size: 30px;
+    margin: 5px;
+    margin-left: 3px;
+    margin-bottom: 20px;
+  }
+/*cursos y capacitaciones fin*/
+
+/*exp laboral inicio*/
+    .experiencia_laboral h2{
+      font-size: 60px;
+      text-align: center;
+    }
+
+    .experiencia_laboral ul{
+      font-size: 40px;
+      margin-right: 10px;
+      margin-left: 30px;
+    }
+
+    .experiencia_laboral p{
+      font-size: 30px;
+      margin: 5px;
+      margin-left: 3px;
+      margin-bottom: 20px;
+    }
+/*exp laboral fin*/
+
+/*objetivo inicio*/
+  .objetivo h2{
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .objetivo p{
+    font-size: 40px;
+    border-radius: 20px 20px 20px 20px;
+    border: 10px double;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    max-width: 80%;
+    line-height: 2;
+  }
+/*objetivo fin*/
+
+}
+
+@media screen and (max-width: 720px) {
+  body, footer{
+      width: auto;
+    }
+
+/*navbar inicio*/
+  nav {
+      padding: 1.5rem 1rem;
+      width: auto;
+    }
+  
+  nav ul {
+      position: fixed;
+      background-color: darkblue;
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+  nav ul li {
+      margin: 8px;
+    }
+  
+  .menu-hamburguesa {
+      display:flex;
+    }
+  
+  nav ul.show {
+      transform: translateX(0);
+    }
+/*navbar fin*/
+
+/*bienvenido inicio*/
+    .bienvenido{
+      height: auto;
+    }
+    
+    .content-modal{
+      width: 90%;
+    }
+
+    .content-modal h2{
+      font-size: 30px;
+    }
+
+    .content-modal p{
+      font-size: 20px;
+    }
+
+    .boton-modal label{
+      font-size: 20PX;
+    }
+/*bienvenido fin*/
+
+/*sobre mi inicio*/
+  .datos_personales{
+    width: 80%;
+  }
+  .datos_personales h2{ 
+    margin-bottom: var(--bottom-margin);
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .datos_personales p{
+    line-height: var(--line-height);
+    padding: 0.3rem 0;  
+    font-size: 20px;
+    margin: auto;
+  }
+/*sobre mi final*/
+
+/*conocimientos inicio*/
+  .conocimientos h2{
+    font-size: 40px;
+  }
+
+  .icon_android, .icon_html, .icon_css, .icon_js, .icon_windows{
+    font-size: 25px;
+  }
+/*conocimientos fin*/
+
+/*formación académica inicio*/
+  .formacion_academica h2{
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .formacion_academica h3{
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom:10px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .formacion_academica p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-right: 10px;
+    font-style: italic;
+  }
+
+  .formacion_academica iframe{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+/*formación académica fin*/
+
+/*cursos y capacitaciones inicio*/
+  .cursos_capacitaciones h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .cursos_capacitaciones ul{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .cursos_capacitaciones p{
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 3px;
+    margin-bottom: 20px;
+  }
+/*cursos y capacitaciones fin*/
+
+/*exp laboral inicio*/
+    .experiencia_laboral h2{
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .experiencia_laboral ul{
+      font-size: 25px;
+      margin-right: 10px;
+      margin-left: 30px;
+    }
+
+    .experiencia_laboral p{
+      font-size: 20px;
+      margin: 5px;
+      margin-left: 3px;
+      margin-bottom: 20px;
+    }
+/*exp laboral fin*/
+
+/*objetivo inicio*/
+  .objetivo h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .objetivo p{
+    font-size: 30px;
+    border-radius: 20px 20px 20px 20px;
+    border: 10px double;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    max-width: 80%;
+    line-height: 2;
+  }
+/*objetivo fin*/
+
+}
+
+@media screen and (max-width: 576px) {
+  body, footer{
+    width: auto;
+  }
+
+  .bienvenido, .datospersonales, .conocimientos, .formacion_academica, .cursos_capacitaciones, .experiencia_laboral, .objetivo{
+    padding: 0;
+  }
+/*navbar inicio*/
+  nav h1 {
+    color: white;
+    font-size: 20px;
+  }
+
+    
+  nav ul {
+    position: fixed;
+    background-color: darkblue;
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+    font-size: 20px;
+  }
+
+/*navbar fin*/
+
+/*sobre mi inicio*/
+  .datos_personales{
+    width: 80%;
+  }
+  .datos_personales h2{ 
+    margin-bottom: var(--bottom-margin);
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .datos_personales p{
+    line-height: var(--line-height);
+    padding: 0.3rem 0;  
+    font-size: 20px;
+    border: none; 
+  }
+  
+  .datospersonales img{
+      margin-top: 5px;
+      margin-bottom: 50px;
+      height: 15rem;
+      width: 15rem;
+    }      
+
+/*sobre mi final*/
+/*conocimientos inicio*/
+  div .conocimientos{
+    width: auto;
+  }
+
+  .conocimientos h2{
+    font-size: 35px;
+  }
+
+  .icon_android, .icon_html, .icon_css, .icon_js, .icon_windows{
+    font-size: 20px;
+  }
+/*conocimientos fin*/
+
+/*formación académica inicio*/
+  .formacion_academica h2{
+    font-size: 35px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    
+    .formacion_academica h3{
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom:10px;
+    text-align: center;
+    }
+    
+    .formacion_academica p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    }
+    
+    .formacion_academica iframe{
+    height: 250px;
+    width: 250px;
+    }
+/*formación académica fin*/
+
+/*cursos y capacitaciones y exp laboral inicio*/
+.cursos_capacitaciones{
+  width: auto;
+}
+
+.cursos_capacitaciones ul{
+  list-style: circle;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.cursos_capacitaciones h2, .experiencia_laboral h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.experiencia_laboral ul{
+  font-size: 20px;
+  list-style: circle;
+}
+
+.cursos_capacitaciones p, .experiencia_laboral p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+/*cursos y capacitaciones y exp laboral fin*/
+
+/*objetivo inicio*/
+  .objetivo h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .objetivo p{
+    font-size: 25px;
+    border-radius: 20px 20px 20px 20px;
+    border: 10px double;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    max-width: 80%;
+    line-height: 2;
+  }
+/*objetivo fin*/
+
+}
+
+@media screen and (max-width: 370px) {
+  body, footer{
+    width: auto;
+  }
+
+  .bienvenido, .datospersonales, .conocimientos, .formacion_academica, .cursos_capacitaciones, .experiencia_laboral, .objetivo{
+    padding: 0;
+  }
+/*navbar inicio*/
+  nav h1 {
+    color: white;
+    font-size: 20px;
+  }
+/*navbar fin*/
+
+/*sobre mi inicio*/
+  .datos_personales{
+    width: 80%;
+  }
+  .datos_personales h2{ 
+    margin-bottom: var(--bottom-margin);
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .datos_personales p{
+    line-height: var(--line-height);
+    padding: 0.3rem 0;  
+    font-size: 20px;
+    border: none; 
+  }
+  
+  .datospersonales img{
+      margin-top: 5px;
+      margin-bottom: 50px;
+      height: 15rem;
+      width: 15rem;
+    }      
+
+/*sobre mi final*/
+/*conocimientos inicio*/
+  div .conocimientos{
+    width: auto;
+  }
+
+  .conocimientos h2{
+    font-size: 35px;
+  }
+
+  .icon_android, .icon_html, .icon_css, .icon_js, .icon_windows{
+    font-size: 20px;
+  }
+/*conocimientos fin*/
+
+/*formación académica inicio*/
+  .formacion_academica h2{
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    
+    .formacion_academica h3{
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom:10px;
+    text-align: center;
+    }
+    
+    .formacion_academica p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    }
+    
+    .formacion_academica iframe{
+    height: 250px;
+    width: 250px;
+    }
+/*formación académica fin*/
+
+/*cursos y capacitaciones y exp laboral inicio*/
+  .cursos_capacitaciones{
+    width: auto;
+  }
+
+  .cursos_capacitaciones ul{
+    list-style: circle;
+    font-size: 20px;
+  }
+
+  .cursos_capacitaciones h2, .experiencia_laboral h2{
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .experiencia_laboral ul{
+    font-size: 20px;
+    list-style: circle;
+  }
+
+  .cursos_capacitaciones p, .experiencia_laboral p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+/*cursos y capacitaciones y exp laboral fin*/
+
+/*objetivo inicio*/
+  .objetivo h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .objetivo p{
+    font-size: 20px;
+    border-radius: 20px 20px 20px 20px;
+    border: 10px double;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    max-width: 80%;
+    line-height: 2;
+  }
+/*objetivo fin*/
+
+}
