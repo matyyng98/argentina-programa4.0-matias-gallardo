@@ -254,10 +254,21 @@ nav ul li {
     width: auto;
     margin-top: 5%;
     margin-right: 10%;
-    margin-bottom: 100px;
     margin-left: 10%;
     letter-spacing: 2px;
     font-family: "noto serif", "monserrat", "arial";
+}
+
+.download label{
+  margin-left: 750px;
+  margin-top: 10%;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #185E83;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-size: 60px;
 }
 
 .photo-container {
@@ -555,6 +566,19 @@ nav ul li {
     padding: 0.3rem 0;  
     font-size: 40px;
     margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .download label{
+    margin-left: 33%;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #185E83;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 40px;
   }
 /*sobre mi final*/
 
@@ -740,6 +764,19 @@ nav ul li {
     padding: 0.3rem 0;  
     font-size: 20px;
     margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .download label{
+    margin-left: 30%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #185E83;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 30px;
   }
 /*sobre mi final*/
 
@@ -898,6 +935,18 @@ nav ul li {
     font-size: 20px;
     border: none; 
   }
+
+  .download label{
+    margin-left: 30%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #185E83;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 30px;
+  } 
   
   .datospersonales img{
       margin-top: 5px;
@@ -1041,6 +1090,19 @@ nav ul li {
     padding: 0.3rem 0;  
     font-size: 20px;
     border: none; 
+    margin-bottom: 15px;
+  }
+
+  .download label{
+    margin-left: 25%;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #185E83;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 20px;
   }
   
   .datospersonales img{
