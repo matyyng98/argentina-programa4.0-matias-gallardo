@@ -28,3 +28,9 @@ desplazarArriba.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Event al apretar el boton de submit
+
+function sendForm() {
+  alert("Gracias por el mensaje, responderé a la brevedad.")
+}

@@ -73,7 +73,7 @@
     </section>
     <!-- Sobre mí -->
     <section class="datospersonales" id="datos_personales">
-      <img class="circular--square" src="images/Messi.jpg">
+      <img class="circular--square" src="images/este soy yo.jpg">
       <div id="datos_personales" class="datos_personales">
               <h2>Sobre mí</h2>
               <p>Primero que nada, mi nombre es Matías Nicolás Gallardo... ¿Qué puedo decir sobre mí? Nací el 28 de marzo de 1998, en Buenos Aires, Argentina. Estoy estudiando el Profesorado de Educación Física en la Universidad Nacional de la Matanza, mientras que a su vez, estoy interesado en aprender sobre programación y sus distintos tipos.<br> En mis ratos libres me gusta estar con videojuegos y ver videos sobre tecnología.</p>
@@ -166,6 +166,56 @@
       <div id="objetivo" class="objetivo">
           <h2>Objetivo:</h2>
           <p>Encontrar un espacio en el cual pueda demostrar mi potencial, formarme continuamente y que, por sobre todas las cosas, permita mi crecimiento profesional y personal.</p>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+      <h2>Contactame</h2>
+      <div class="formulario-contacto-contenedor">
+        <div class="formulario-contacto">
+          <form action="" onsubmit="sendForm()">
+            <div class="control-formulario">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Nombre y apellido"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Correo electrónico"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                cols="60"
+                rows="10"
+                placeholder="Escribime tu mensaje"
+                name="mensaje"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
       </div>
     </section>
     <!-- Footer redes sociales -->
